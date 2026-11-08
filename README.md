@@ -15,4 +15,9 @@ use `npm run dev` for dev builds
 
 ## Usage
 after installation, type `hash` into vicinae for a dropdown list of algorithms
-or type the algorithm name (eg. `sha256`) to use it without the extra step 
+or type the algorithm name (eg. `sha256`) to use it without the extra step
+
+## Currently supported algorithms
+- sha256
+- sha512
+- md5
