@@ -23,8 +23,32 @@
           "required": true,
           "data": [
             {
+              "title": "Sha224",
+              "value": "sha224"
+            },
+            {
               "title": "Sha256",
               "value": "sha256"
+            },
+            {
+              "title": "Sha384",
+              "value": "sha384"
+            },
+            {
+              "title": "Sha512",
+              "value": "sha512"
+            },
+            {
+              "title": "Sha512_224",
+              "value": "sha512_224"
+            },
+            {
+              "title": "Sha512_256",
+              "value": "sha512_256"
+            },
+            {
+              "title": "Md5",
+              "value": "md5"
             }
           ]
         },
