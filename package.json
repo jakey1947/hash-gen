@@ -63,6 +63,20 @@
           "required": true
         }
       ]
+    },
+    {
+      "name": "md5",
+      "title": "Hash text with md5",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
     }
   ],
   "preferences": [],
