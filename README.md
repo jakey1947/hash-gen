@@ -1,15 +1,17 @@
-# Vicinae Extension
+# Vicinae Hashing Extension
 
-Congratulations on generating your new Vicinae extension!
-
-You can install the required dependencies and run your extension in development mode like so:
-
-```bash
+## Installation
+### From Source
+download the source code
+extract the zip
+run ```bash
+cd "/your/file/path"
 npm install
-npm run dev
-```
-If you want to build the production bundle, simply run:
-
-```bash
 npm run build
 ```
+
+use `npm run dev` for dev builds
+
+## Usage
+after installation, type `hash` into vicinae for a dropdown list of algorithms
+or type the algorithm name (eg. `sha256`) to use it without the extra step 
