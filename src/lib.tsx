@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { Action, ActionPanel, Detail } from "@vicinae/api";
-import { sha256, sha512 } from '@noble/hashes/sha2.js';
+import { sha224, sha256, sha384, sha512, sha512_224, sha512_256 } from '@noble/hashes/sha2.js';
 import { bytesToHex } from "@noble/hashes/utils.js";
 import { md5 } from "@noble/hashes/legacy.js";
 
@@ -32,7 +32,11 @@ interface Dictionary<T> {
 type HashFunction = (a: string) => Uint8Array<ArrayBufferLike>;
 
 const algorithms : Dictionary<HashFunction> = {
+	"sha224": (input: string) => sha224(Uint8Array.from(new TextEncoder().encode(input))),
+	"sha512_224": (input: string) => sha512_224(Uint8Array.from(new TextEncoder().encode(input))),
 	"sha256": (input: string) => sha256(Uint8Array.from(new TextEncoder().encode(input))),
+	"sha512_256": (input: string) => sha512_256(Uint8Array.from(new TextEncoder().encode(input))),
+	"sha384": (input: string) => sha384(Uint8Array.from(new TextEncoder().encode(input))),
 	"sha512": (input: string) => sha512(Uint8Array.from(new TextEncoder().encode(input))),
 	"md5": (input: string) => md5(Uint8Array.from(new TextEncoder().encode(input))),
 };

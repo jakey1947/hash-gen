@@ -77,6 +77,62 @@
           "required": true
         }
       ]
+    },
+    {
+      "name": "sha224",
+      "title": "Hash text with sha224",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sha384",
+      "title": "Hash text with sha384",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sha512_224",
+      "title": "Hash text with sha512_224",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sha512_256",
+      "title": "Hash text with sha512_256",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
     }
   ],
   "preferences": [],
