@@ -34,5 +34,5 @@ type HashFunction = (a: string) => Uint8Array<ArrayBufferLike>;
 const algorithms : Dictionary<HashFunction> = {
 	"sha256": (input: string) => sha256(Uint8Array.from(new TextEncoder().encode(input))),
 	"sha512": (input: string) => sha512(Uint8Array.from(new TextEncoder().encode(input))),
-	"shamd4": (input: string) => md5(Uint8Array.from(new TextEncoder().encode(input))),
+	"md5": (input: string) => md5(Uint8Array.from(new TextEncoder().encode(input))),
 };
