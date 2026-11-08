@@ -1,0 +1,83 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vicinaehq/vicinae/refs/heads/main/extra/schemas/extension.json",
+  "name": "hash-gen",
+  "title": "hash-gen",
+  "description": "Generate hashes from text",
+  "categories": [],
+  "license": "MIT",
+  "author": "jakey1947",
+  "contributors": [],
+  "pastContributors": [],
+  "icon": "extension_icon.png",
+  "commands": [
+    {
+      "name": "hash",
+      "title": "Hash text",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "algorithm",
+          "placeholder": "Algorithm",
+          "type": "dropdown",
+          "required": true,
+          "data": [
+            {
+              "title": "Sha256",
+              "value": "sha256"
+            }
+          ]
+        },
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sha256",
+      "title": "Hash text with sha256",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "name": "sha512",
+      "title": "Hash text with sha512",
+      "description": "generate the a hash for the given text",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "content",
+          "placeholder": "Input Text",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "preferences": [],
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop",
+    "format": "biome format --write src",
+    "lint": "vici lint"
+  },
+  "dependencies": {
+    "@noble/hashes": "^2.4.0",
+    "@vicinae/api": "^0.29.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.2",
+    "typescript": "^5.9.2"
+  }
+}
