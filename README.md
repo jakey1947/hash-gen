@@ -4,7 +4,7 @@
 ### From Source
 download the source code
 extract the zip
-run ```bash
+run ``` bash
 cd "/your/file/path"
 npm install
 npm run build
